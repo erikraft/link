@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 ErikrafT・Link na Bio</title>
+    <!-- Adicionando o Favicon -->
+    <link rel="icon" href="https://i.ibb.co/bzSrWcX/WOLVpp-Logotipo.png" type="image/x-icon">
+    <!-- Adicionando o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adicionando o Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Adicionando o Bootstrap Docs - AlertBox --> 
+    <link href='https://getbootstrap.com/docs/5.3/assets/css/docs.css' rel='stylesheet'/>
+    <!-- Adicionando o Bootstrap Icon AlertBox -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" />
+    <style>
+
+        /* Estilos Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0b173d; /* Fundo escuro */
+            color: white; /* Texto branco */
+            margin: 0;
+            padding: 0; /* Remove o padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+            overflow: auto; /* Permite rolagem na tela */
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            background-color: #1e1e1e; /* Fundo ligeiramente mais claro para o contêiner */
+            margin-top: 10px; /* Espaço superior para evitar o corte do topo */
+            margin-bottom: 20px; /* Espaço inferior para evitar o corte do fundo */
+        }
+
+        .logo img {
+            width: 180px; /* Aumenta o tamanho do logo */
+            margin-bottom: 10px; /* Menos espaço abaixo do logo */
+        }
+
+        h2 {
+            font-size: 24px; /* Aumenta o tamanho do título */
+            margin: 10px 0; /* Espaço superior e inferior */
+        }
+
+        p {
+            font-size: 16px; /* Ajusta o tamanho da fonte do texto */
+            line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+            margin: 10px 0; /* Espaço superior e inferior */
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column; /* Coloca os botões um embaixo do outro */
+            gap: 15px; /* Aumenta o espaçamento entre os botões */
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 14px 0; /* Aumenta o espaço interno vertical */
+            border: 2px solid white; /* Contorno branco */
+            border-radius: 30px;
+            text-decoration: none; /* Remove o sublinhado */
+            color: white; /* Define a cor do texto como branco */
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff0000, #426eff);
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-size: 18px; /* Aumenta o tamanho da fonte */
+        }
+
+        .button:visited,
+        .button:link,
+        .button:active {
+            color: white; /* Define a cor do texto como branco */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #06ac00, #00c3ff);
+            transform: scale(1.05); /* Leve aumento no tamanho do botão ao passar o mouse */
+        }
+
+        .photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Aumenta o espaçamento entre as fotos */
+            margin-bottom: 20px; /* Espaço abaixo das fotos */
+        }
+
+        .photos img {
+            max-width: 100%; /* Fotos se ajustam ao tamanho do contêiner */
+            height: auto; /* Mantém a proporção das fotos */
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photos img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center; /* Centraliza os ícones */
+            gap: 15px; /* Espaçamento entre os ícones */
+            margin-top: 20px; /* Espaço acima dos ícones de redes sociais */
+        }
+
+        .social-button {
+            width: 50px; /* Largura dos ícones */
+            height: 50px; /* Altura dos ícones */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white; /* Cor do ícone */
+            background-color: #333; /* Cor de fundo padrão dos ícones */
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-size: 24px; /* Tamanho dos ícones */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .social-button:visited,
+        .social-button:link,
+        .social-button:active {
+            color: white; /* Define a cor do texto como branco */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .social-button i {
+            margin: 0; /* Remove a margem dos ícones */
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); /* Gradiente para Instagram */
+        }
+
+        .facebook {
+            background: linear-gradient(45deg, #0051ff, #5780d8); /* Gradiente para Facebook */
+        }
+
+        .youtube {
+            background: linear-gradient(45deg, #ff0000, #bd4545); /* Gradiente para YouTube */
+        }
+
+        .threads {
+            background: linear-gradient(45deg, #000000, #646464); /* Gradiente para Threads */
+        }
+
+        .social-button:hover {
+            background: #a41cb6; /* Cor de fundo ao passar o mouse */
+            transform: scale(1.1); /* Leve aumento no tamanho do botão ao passar o mouse */
+        }
+
+        @media (min-width: 600px) {
+            .photos {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .photos img {
+                width: 180px; /* Aumenta o tamanho das fotos em telas maiores */
+            }
+        }
+        
+        /* Estilo para o botão de fechar da AlertBox */
+        .alert .btn-close {
+            position: absolute; /* Torna o botão de fechar posicionado absoluto */
+            top: 5px; /* Alinha ao topo da caixa de alerta */
+            right: 15px; /* Alinha à direita da caixa de alerta */
+            color: #c0a96c; /* Cor do ícone do botão de fechar */
+            background: none; /* Remove qualquer fundo do botão */
+            border: none; /* Remove qualquer borda do botão */
+            font-size: 1.59rem; /* Aumenta o tamanho do ícone para melhor visibilidade */
+        }
+
+        .alert {
+            position: relative; /* Necessário para que o botão de fechar seja posicionado relativo à caixa de alerta */
+        }
+
+        .unload-warning {
+            color: #ffcc00;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+    </style>
+
+<script charset="UTF-8" src="//web.webpushs.com/js/push/89267e4cfad9117d01afffe63873df19_1.js" async></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- AlertBox -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong><i class="bi bi-people-fill"></i> Parceiro!</strong> Meu mano parceiro Paradoxo Craft tem um Server do Discord!!! <a href="https://discord.gg/QCuzTJUKZD" target="_blank">Participar <i class="bi bi-box-arrow-up-right"></i></a>
+            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- End AlertBox -->
+        
+        <div class="logo">
+            <img src="https://i.ibb.co/mz4tr7R/FOTO-PERFIL-2-0-Circular.png" alt="WolvPP">
+            <h2>ErikrafT</h2>
+            <p>
+                <i class="bi bi-box-fill"></i> Influencer Digital de Minecrft
+            </p>
+            <p><i class="bi bi-share-fill"></i> Compartilhe o meu perfil</p>
+            <br>
+        </div>
+        
+        <div class="buttons">
+            <a href="https://www.elo7.com.br/wolvpersonalizados" class="button" target="_blank"><i class="bi bi-youtube"></i> @ErikrafT</a>
+            <a href="https://shopee.com.br/wolvreturns" class="button" target="_blank"><i class="bi bi-discord"></i> Meu Server</a>
+        </div>
+        
+        <div class="photos">
+            <img src="https://i.ibb.co/dp5FvP2/1-GIF-Vamos-Jogar-Minecraft-500px-X-500px.gif" alt="Camiseta Stumble Guys">
+            <img src="https://i.ibb.co/zPpXj7j/Erikraf-T-Camiseta-Preta-Mockup.png" alt="Camiseta Infantil Super Mario">
+            <img src="https://i.ibb.co/yWM0mBW/Erikraf-T-Camiseta-Branca-Mockup.png">
+        </div>
+        
+        <div class="social-media">
+            <a href="https://www.youtube.com/@ErikrafT" target="_blank" class="social-button youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/erikraft.yt/" target="_blank" class="social-button instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.threads.net/@erikraft.yt" target="_blank" class="social-button threads" aria-label="Threads">
+                <i class="fab fa-threads"></i>
+            </a>
+            <a href="https://www.facebook.com/ErikrafTyt" target="_blank" class="social-button facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <div class="unload-warning">
+            <i class="bi bi-exclamation-triangle-fill"></i> Não saia da página, antes Inscreva-se no Canal!
+        </div>
+    </div>
+
+    <!-- Adicionando o Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Impedir Fechar Guia -->
+    <script>
+        window.onbeforeunload = function(event) {
+            const message = "Quer realmente sair do site?";
+            event.returnValue = message; // Para navegadores modernos
+            return message; // Para navegadores mais antigos
+        };
+    </script>
+    <!-- End Impedir Fechar Guia -->
+</body>
+</html>
